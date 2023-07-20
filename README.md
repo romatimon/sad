@@ -1,8 +1,11 @@
+
+Если проекта никогда не было: 
+
 python -m venv venv
 source venv/Scripts/activate 
-
-
 python -m pip install --upgrade pip
+pip install Django==3.2.16
+Создайте Django-проект командой: django-admin startproject acme_project (название может быть любым, для тренировки пусть будет acme_project).
 
 
 pip install pytest
@@ -14,7 +17,6 @@ flake8 --version
 flake8 имя_файла.py
 
 
-pip install Django==3.2.16
 python manage.py migrate
 python manage.py runserver
 
